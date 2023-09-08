@@ -6,6 +6,10 @@
     Achieve:解析数据，作图
 """
 
+'''
+    作图可以进行优化
+'''
+
 import re
 from datetime import datetime
 import matplotlib.pyplot as plt
