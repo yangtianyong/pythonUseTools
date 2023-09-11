@@ -76,5 +76,4 @@ print(result.groups()[0])
         4>re.sub(pattern,repl,string,count=0,flags=0)
         
         5>re.split()
-            
 '''
