@@ -9,10 +9,14 @@
 import pytest
 
 class TestLogin:
+
+    @pytest.mark.run(order=2)
+    def test02(self):
+        print("测试用例运行2")
+
+    @pytest.mark.run(order=1)
     def test01(self):
-        print("测试用例运行")
-
-
+        print("测试用例运行1")
 
 if __name__ == '__main__':
 
@@ -23,4 +27,4 @@ if __name__ == '__main__':
     # pytest.main(["-s"])
 
     #单独运行一个用例
-    pytest.main(["-vs","test_pydemo02.py"])
+    pytest.main(["-vs","test_pydemo01.py"])
