@@ -10,6 +10,7 @@ import pytest
 
 class Test_demo02:
 
+    @pytest.mark.smoke
     def test01(self):
         print("测试用例运行demo02")
 

@@ -56,5 +56,8 @@
 '''
 
 '''
-    冒烟用例：
+    分组执行：
+        例如冒烟用例，分布在各个模块里面
+        pytest -vs -m "smoke"  -- 注意要与ini文件里smoke结合
+        pytest -vs -m "smoke or normal"  --  可以同时执行smoke和normal
 '''

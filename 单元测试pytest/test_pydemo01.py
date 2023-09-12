@@ -11,10 +11,13 @@ import pytest
 class TestLogin:
 
     @pytest.mark.run(order=2)
+    @pytest.mark.normal
     def test02(self):
         print("测试用例运行2")
 
+
     @pytest.mark.run(order=1)
+    @pytest.mark.smoke
     def test01(self):
         print("测试用例运行1")
 
