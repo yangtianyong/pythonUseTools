@@ -61,3 +61,26 @@
         pytest -vs -m "smoke"  -- 注意要与ini文件里smoke结合
         pytest -vs -m "smoke or normal"  --  可以同时执行smoke和normal
 '''
+
+'''
+    测试用例跳过：
+        无条件跳过：@pytest.mark.skip(reason="测试用例跳过")
+        有条件跳过：@pytest.mark.skipif(填写的条件)
+'''
+
+'''
+    生成测试报告：
+        addopts = -vs  --html  ./report/report.html
+'''
+
+'''
+    pytest框架实现一些前后置的处理，常用三种：
+        setup/teardown,setup_class/teardown_class
+    使用@pytest.fixture装饰器来实现部分用例的前后置 --  对其中部分的用例实现前后置
+    fixture参数：
+        scope表示的是被@pytest.fixture标记的方法的作用域 --function(默认) class  module  package  session
+        params:参数化
+        autouse=True:自动执行，默认为False
+        ids:当使用params参数化时，给每一个值设置一个变量名
+        name:表示给被标记的方法取一个别名
+'''
